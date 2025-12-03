@@ -1,11 +1,11 @@
 // Header.js
 import React from "react";
 import { useDarkMode } from "../context/DarkModeContext";
-import AdminDashboard from "../assets/AdminDashboard.png";
-import AdminBackground from "../assets/AdminBackground.png"
-import AdminDashboardEdited from "../assets/AdminDashboardEdited.jpg"
-import TeacherDashboardEdited from "../assets/TeacherDashboardEdited.jpg"
-import StudentDashboardEdited from "../assets/StudentDashboardEdited.jpg"
+// import AdminDashboard from "../assets/AdminDashboard.png";
+// import AdminBackground from "../assets/AdminBackground.png"
+// import AdminDashboardEdited from "../assets/AdminDashboardEdited.jpg"
+// import TeacherDashboardEdited from "../assets/TeacherDashboardEdited.jpg"
+// import StudentDashboardEdited from "../assets/StudentDashboardEdited.jpg"
 
 
 import "../app.css";
