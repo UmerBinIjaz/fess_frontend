@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  assetsInclude: ['**/*.PNG', '**/*.JPG', '**/*.JPEG'],
-  base: '/fess-frontend/' // important for GitHub Pages project path
+  base: '/fess-frontend/',  // important for GitHub Pages
+  assetsInclude: ['**/*.PNG', '**/*.JPG', '**/*.JPEG']
 })
