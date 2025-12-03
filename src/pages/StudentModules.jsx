@@ -8,7 +8,7 @@ import { useDarkMode } from "../context/DarkModeContext";
 // import StudentDashboardEdited from "../assets/StudentDashboardEdited.jpg"
 
 
-import "../app.css";
+import "../App.css";
 import { DarkMode } from "@mui/icons-material";
 
 const StudentModules = () => {
