@@ -8,7 +8,7 @@ import About from '../components/About';
 // import DetailTwo from '../components/DetailTwo';
 // import DetailThree from '../components/DetailThree';
 import { useDarkMode } from "../context/DarkModeContext";
-import "../app.css";
+import "../App.css";
 import AdminModules from './AdminModules';
 import StudentModules from './StudentModules';
 import Footer from '../components/Footer';
