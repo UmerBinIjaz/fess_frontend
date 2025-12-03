@@ -1,5 +1,5 @@
 import React from 'react'
-import AdminDashboard from "../assets/AdminDashboard.png";
+// import AdminDashboard from "../assets/AdminDashboard.png";
 
 const About = () => {
   return (
@@ -77,21 +77,6 @@ const About = () => {
             
           </div>
         </div>
-        <div className="flex justify-start" >
-          <div className="w-full">
-            <div class="w-full">
-                <div class="flex justify-center">
-                              <img
-                                className="inline w-full max-w-md lg:max-w-lg"
-                                src={AdminDashboard}
-                                alt="Smartphone Mockup"
-                              />
-                </div>
-            </div>
-            
-          </div>
-        </div>
-
 
       </div>
     </section>
