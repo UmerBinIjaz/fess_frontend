@@ -4,7 +4,7 @@ import { useDarkMode } from "../context/DarkModeContext";
 import Fazaia from "../assets/Fazaia.jpg";
 
 
-import "../app.css";
+import "../App.css";
 import { DarkMode } from "@mui/icons-material";
 
 

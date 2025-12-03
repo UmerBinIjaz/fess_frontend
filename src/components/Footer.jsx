@@ -7,7 +7,7 @@ import TeacherDashboardEdited from "../assets/TeacherDashboardEdited.jpg"
 import StudentDashboardEdited from "../assets/StudentDashboardEdited.jpg"
 
 
-import "../app.css";
+import "../App.css";
 import { DarkMode } from "@mui/icons-material";
 
 const Footer = () => {
