@@ -1,0 +1,101 @@
+import React, { useState} from 'react';
+import { Link, useLocation} from 'react-router-dom';
+import { menuItems } from '../constants';
+
+import { ChevronFirst, ChevronLast, MoreVertical } from "lucide-react";
+// import logo from "../assets/logo.png"
+// import profile from "../assets/profile.png"
+import { createContext, useContext } from "react"
+
+
+const Sidebar = ({isSidebarOpen}) => {
+  const location = useLocation();
+  const [activeIndex, setActiveIndex] = useState(null); // Track the active menu item
+
+  const handleItemClick = (index) => {
+    setActiveIndex(index); // Set the clicked menu item as active
+  };
+
+  
+
+  return (
+    <>
+    {/* Start of Sidebar Section */}
+      <aside
+        className={`h-full text-white w-64 p-4 transform transition-transform duration-300 sm:translate-x-0 ${
+          isSidebarOpen ? "translate-x-0" : "-translate-x-full"
+        } sm:block fixed sm:relative`}  style={{ backgroundColor: "#fff", borderColor: '#e5e7eb', color: 'black' }}
+      >
+        <nav>
+          <ul>
+            <li className="mb-2" >
+            {menuItems.map((item, index) => (
+                <Link  
+                to={item.path}  style={{ fontWeight: 500, fontSize: '14px', lineHeight: '1.5', margin: '5px' }}
+                className={`flex text-dark items-center rounded-md p-2 cursor-pointer text-sm gap-x-4 
+                  ${activeIndex === index ? 'bg-light-blue text-tx-color border border-br-color' : 'hover:bg-light-blue hover:text-dark'} transition-all duration-300 ease-in-out`} // Apply active style or hover style
+                onClick={() => handleItemClick(index)} // Set the active item on click
+              >
+                <item.icon className="text-xl"  />
+                <span className={`origin-left duration-200 ${activeIndex === index ? 'text-blue-600' : 'text-dark'}`}>
+                  {item.name}
+                </span>
+              </Link>
+
+            ))}
+            </li>
+            {/* <li className="mb-2">
+              <a href="#" className="block p-2 hover:bg-gray-700 rounded">
+                Profile
+              </a>
+            </li>
+            <li className="mb-2">
+              <a href="#" className="block p-2 hover:bg-gray-700 rounded">
+                Settings
+              </a>
+            </li> */}
+          </ul>
+        </nav>
+      </aside>
+    {/* End of Sidebar Section */}
+    </>
+  )
+}
+
+export default Sidebar
+// export default function Sidebar({  darkMode, isSidebarOpen  }) {
+
+  
+//     return (
+//         <>
+//         {/* Start of Sidebar Section */}
+//           <aside
+//             className={`bg-dark-purple h-full text-white w-64 p-4 transform transition-transform duration-300 sm:translate-x-0 ${
+//               isSidebarOpen ? "translate-x-0" : "-translate-x-full"
+//             } sm:block fixed sm:relative`}
+//           >
+//             <nav>
+//               <ul>
+//                 <li className="mb-2">
+//                   <a href="#" className="block p-2 hover:bg-gray-700 rounded">
+//                     Dashboard
+//                   </a>
+//                 </li>
+//                 <li className="mb-2">
+//                   <a href="#" className="block p-2 hover:bg-gray-700 rounded">
+//                     Profile
+//                   </a>
+//                 </li>
+//                 <li className="mb-2">
+//                   <a href="#" className="block p-2 hover:bg-gray-700 rounded">
+//                     Settings
+//                   </a>
+//                 </li>
+//               </ul>
+//             </nav>
+//           </aside>
+//         {/* End of Sidebar Section */}
+//         </>
+//     )
+// }
+

@@ -1,0 +1,108 @@
+/* Global Box Sizing */
+*, *:after, *:before {
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --c-action-primary: #2e44ff;
+    --c-action-primary-accent: #e9e5ff;
+    --c-action-secondary: #e5e5e5;
+    --c-text-primary: #0d0f21; 
+    --c-text-secondary: #6b6b6b;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+
+  
+  .btn-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .modal-body {
+    background: white;
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .upload-area {
+    display: block;
+    padding: 20px;
+    background: #f0f0f0;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .upload-area-icon {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .upload-area-title {
+    font-size: 16px;
+  }
+  
+  .upload-area-description {
+    font-size: 14px;
+  }
+  
+  .modal-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+  }
+  
+  .btn-secondary {
+    background: #e5e5e5;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-primary {
+    background: var(--c-action-primary);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .error, .success {
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .error {
+    background-color: #ffcccc;
+    color: #ff0000;
+  }
+  
+  .success {
+    background-color: #ccffcc;
+    color: #009900;
+  }
+  
