@@ -6,6 +6,7 @@ import AdminRoutes from './routes/AdminRoutes';
 // import TeacherRoutes from './routes/TeacherRoutes';
 import StudentRoutes from './routes/StudentRoutes';
 import NotFound from './pages/NotFound';
+import CastVote from './pages/CastVote';
 
 // import './App.css'
 // src/App.jsx
@@ -17,6 +18,7 @@ function App() {
         <Router>
             <Routes>
                 <Route path="/" element={<HomePage />} />
+                <Route path="/cast-vote" element={<CastVote />} />
                 <Route path="/admin/*" element={<AdminRoutes />} />
                 {/* <Route path="/teacher/*" element={<TeacherRoutes />} /> */}
                 <Route path="/student/*" element={<StudentRoutes />} />
@@ -27,4 +29,3 @@ function App() {
 }
 
 export default App;
-
