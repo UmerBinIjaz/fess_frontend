@@ -12,7 +12,7 @@ const CastVote = () => {
   // Fetch all candidates once
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/student/getCandidates")
+      .get("https://fess-backend-6787.onrender.com/api/student/getCandidates")
       .then((res) => setCandidates(res.data))
       .catch(() => setError("Failed to load candidates."));
   }, []);
@@ -23,7 +23,7 @@ const CastVote = () => {
 
     try {
       const res = await axios.get(
-        `http://localhost:5000/api/student/getStudentByReg/${regSearch}`
+        `https://fess-backend-6787.onrender.com/api/student/getStudentByReg/${regSearch}`
       );
 
       if (res.data) {
@@ -62,7 +62,7 @@ const CastVote = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/student/castVote",
+        "https://fess-backend-6787.onrender.com/api/student/castVote",
         {
           studentId: student.id,
           votes: selected,
